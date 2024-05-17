@@ -54,7 +54,7 @@ def generate_image(selected_state: gr.SelectData, image: gr.Image, gr_styles: gr
     
     print("[INFO] Generating image...")
     image = ip_model.generate(
-        prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=210*4, height=297*4, num_inference_steps=30
+        prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=210*4, height=296*4, num_inference_steps=50
     )
     print("[INFO] Generated")
     return image
