@@ -108,8 +108,8 @@ with gr.Blocks(css="custom.css") as demo:
             inputs=[photo, gr_styles],
             outputs=[result_gallery],
             queue=False,
-            show_progress=False
-        )
+            show_progress=True,        
+            )
             
 demo.launch(share=True)
 

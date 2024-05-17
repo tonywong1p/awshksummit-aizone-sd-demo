@@ -2,7 +2,7 @@
     {
         "image": "styles/portraits.webp",
         "title": "Portraits",
-        "prompt": "A half Body Photo of a beautiful brunette Scottish human, green eyes, messy beehive hair style, natural skin complexion, slim with curves, tartan shirt, outdoor background, soft lighting, captured by {randomly selected} photographer. This image looks glamorous and elegant in style and outdoor  background that was recognized as a contest winner. It has been featured on CG Society. Cinematic"
+        "prompt": "A half Body Photo of a Scottish, green eyes, messy beehive hair style, natural skin complexion, tartan shirt, outdoor background, soft lighting, captured by {randomly selected} photographer. This image looks glamorous and elegant in style and outdoor  background that was recognized as a contest winner. It has been featured on CG Society. Cinematic"
     },
     {
         "image": "styles/firebird.webp",
@@ -16,7 +16,7 @@
     },
     {
         "image": "styles/japanese_anime.webp",
-        "title": "Japanese Anime",
+        "title": "Black Red",
         "prompt": "aesthetic, 2 tone, black and white, simplified shapes, figurative, style mix of acrylic painting, watercolor, oil painting, photography, digital art,   brush strokes, dark red color pop, a gorgeous young asian, highly detailed , ultra detailed, very intricate, low poly, abstract surreal, Kanji , Katakana ,  niji style, graffiti style,  comics style, anime style "
     },
     {
@@ -43,5 +43,10 @@
         "image": "styles/final_fantasy.webp",
         "title": "Final Fantasy",
         "prompt": "A portrait of a final fantasy ethereal character figure in the realm of fantasy, muscular and well-built physique, with piercing eyes, exudes an aura of power and strength, shiny metal armor, skilled in swordsmanship, able to wield a sword with precision and speed, has a natural affinity for nature magic, She can communicate with animals, control plants, and summon natural elements to aid her in battle, highly detailed, 8k resolution, smooth, in focus, photo realistic, finely detailed"
+    },
+    {   
+        "image": "style/fashion.webp",
+        "title": "Fashion",
+        "prompt": "fashion cover, front view, full-body, model, colorful wall, red suit, black shirt, red tie, red leather jeans with silver shoes --ar 9:16"
     }
 ]
