@@ -32,30 +32,37 @@ pipe = StableDiffusionPipeline.from_pretrained(
 
 ip_model = IPAdapterFaceID(pipe, ip_ckpt, device)
 
-def generate_image(images, prompt, negative_prompt, progress=gr.Progress(track_tqdm=True)):
+def generate_image(selected_state: gr.SelectData, image: gr.Image, gr_styles: gr.State):
+    prompt = gr_styles[selected_state.index]["prompt"]
+    negative_prompt = "naked, bikini, skimpy, scanty, bare skin, lingerie, swimsuit, exposed, see-through"
+    print("[INFO] Prompt: ", prompt)
+    print("[INFO] Negative Prompt: ", prompt)
+
+    temp_img_path = "./temp/image.jpg"
+    image.save(temp_img_path)
+
     pipe.to(device)
     app = FaceAnalysis(name="buffalo_l", providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
     app.prepare(ctx_id=0, det_size=(640, 640))
 
     faceid_all_embeds = []
-    for image in images:
-        face = cv2.imread(image)
-        faces = app.get(face)
-        faceid_embed = torch.from_numpy(faces[0].normed_embedding).unsqueeze(0)
-        faceid_all_embeds.append(faceid_embed)
-    
+    face = cv2.imread(temp_img_path)
+    faces = app.get(face)
+    faceid_embed = torch.from_numpy(faces[0].normed_embedding).unsqueeze(0)
+    faceid_all_embeds.append(faceid_embed)
     average_embedding = torch.mean(torch.stack(faceid_all_embeds, dim=0), dim=0)
     
+    print("[INFO] Generating image...")
     image = ip_model.generate(
         prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=512, height=512, num_inference_steps=30
     )
-    print(image)
+    print("[INFO] Generated")
     return image
 
 
 with open("styles.json", "r") as file:
     data = json.load(file)
-    sdxl_loras_raw = [
+    styles_raw = [
         {
             "image": item["image"],
             "title": item["title"],
@@ -64,7 +71,6 @@ with open("styles.json", "r") as file:
         for item in data
     ]
 
-
 with gr.Blocks(css="custom.css") as demo:
     gr.Image("./static/aws_logo.png", height=100, width=100, show_download_button=False, show_label=False)
     gr.Markdown(
@@ -72,28 +78,38 @@ with gr.Blocks(css="custom.css") as demo:
     # AWS HK Summit 2024 - IP Adapter FaceID Demo
     This demo showcases the IP Adapter FaceID model, which generates images based on a given prompt.
     """)
-    with gr.Row():
+    with gr.Row(elem_id="main_app"):
+        gr_styles = gr.State(value=styles_raw)
         with gr.Column(scale=12, elem_id="box_column"):
             with gr.Group(elem_id="gallery_box"):
                 photo = gr.Image(label="Upload a picture of yourself", sources=["webcam"], interactive=True, type="pil", height=500)
                 style_gallery = gr.Gallery(
-                    value=[(item["image"], item["title"]) for item in sdxl_loras_raw],
+                    value=[(item["image"], item["title"]) for item in styles_raw],
                     label="Pick a style from the gallery",
                     allow_preview=False,
                     columns=4,
-                    elem_id="gallery",
+                    elem_id="style-gallery",
                     show_share_button=False,
                     height=550
                 )
         with gr.Column(scale=12, elem_id="box_column"):
-            result_gallery = gr.Gallery(label="Generated Image", columns=2, object_fit="contain", height="auto")
-            style_gallery.select(
-                fn=generate_image,
-                inputs=[photo, style_gallery],
-                outputs=[result_gallery],
-                queue=False,
-                show_progress=False
-            )
+            result_gallery = gr.Gallery(
+                    label="Generated Image", 
+                    columns=2, 
+                    object_fit="contain", 
+                    height="auto",
+                    elem_id="result-gallery",
+                    allow_preview=False,
+                    show_share_button=False,
+                )
+
+        style_gallery.select(
+            fn=generate_image,
+            inputs=[photo, gr_styles],
+            outputs=[result_gallery],
+            queue=False,
+            show_progress=False
+        )
             
 demo.launch()
 
