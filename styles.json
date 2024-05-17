@@ -50,9 +50,9 @@
         "prompt": "fashion cover, front view, full-body, model, colorful wall, red suit, black shirt, red tie, red leather jeans with silver shoes --ar 9:16"
     },
     {
-        "image": "styles/dragon_ball.webp",
-        "title": "Dragon Ball",
-        "prompt": "dragon ball art, in the style of solarization effect, dark red and gray, uhd image, charming anime characters, dark silver and sky-blue, heavy shading, handsome --ar 63:128 --stylize 750 --v 6"
+        "image": "styles/unity.webp",
+        "title": "Unity",
+        "prompt": "3D Avatar Design, Playful, Cute, Colorful, Animated, Quirky,Unity,Blend shape rigging,Bright and vibrant lighting,Overhead camera angle,Cartoon rendering,By David Rodriguez --ar 9:16"
     },
     {
         "image": "styles/cartoon.webp",
