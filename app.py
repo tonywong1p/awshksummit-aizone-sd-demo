@@ -96,11 +96,13 @@ with gr.Blocks(css="custom.css") as demo:
             result_gallery = gr.Gallery(
                     label="Generated Image", 
                     columns=2, 
+                    selected_index=0,
                     object_fit="contain", 
                     elem_id="result-gallery",
                     allow_preview=True,
                     show_share_button=False,
-                    height=1100
+                    show_download_button=True,
+                    height=1050
                 )
 
         style_gallery.select(
