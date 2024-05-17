@@ -32,7 +32,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
 
 ip_model = IPAdapterFaceID(pipe, ip_ckpt, device)
 
-def generate_image(selected_state: gr.SelectData, image: gr.Image, gr_styles: gr.State):
+def generate_image(selected_state: gr.SelectData, image: gr.Image, gr_styles: gr.State, progress=gr.Progress(track_tqdm=True)):
     prompt = gr_styles[selected_state.index]["prompt"]
     negative_prompt = "naked, bikini, skimpy, scanty, bare skin, lingerie, swimsuit, exposed, see-through"
     print("[INFO] Prompt: ", prompt)
