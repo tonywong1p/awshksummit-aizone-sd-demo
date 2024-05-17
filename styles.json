@@ -1,11 +1,11 @@
 [
     {
-        "image": "illustrations/3d-min.png",
+        "image": "styles/3d-min.png",
         "title": "Photography",
         "prompt": "sosmed influencer, wearing a chic outfit and sunglasses, with a bustling city street in the background. with blonde highlights hairstyle,  HDR, 8k, ISO100, F1/16, Shutter Speed 1/1000"
     },
     {
-        "image": "illustrations/tintin-min.png",
+        "image": "styles/crayion-min.png",
         "title": "3D render",
         "prompt": "(chibi) , ken of street fighter, dynamic pose"
     }

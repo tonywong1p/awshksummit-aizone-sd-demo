@@ -11,3 +11,9 @@ IP Adapter FaceID demo webui
 
 # [Online Face Swap and AI Portrait Website with a Wide Range of AI Portrait Materials](https://facesswap.com/)
 
+
+# GPU driver
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html#nvidia-gaming-driver
+
+# Python 3.10
+https://stackoverflow.com/questions/69692703/compiling-python-3-10-at-amazon-linux-2
