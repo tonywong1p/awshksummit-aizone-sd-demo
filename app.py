@@ -54,7 +54,7 @@ def generate_image(selected_state: gr.SelectData, image: gr.Image, gr_styles: gr
     
     print("[INFO] Generating image...")
     image = ip_model.generate(
-        prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=424, height=592, num_inference_steps=30
+        prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=720, height=1280, num_inference_steps=20
     )
     print("[INFO] Generated")
     return image
@@ -82,10 +82,10 @@ with gr.Blocks(css="custom.css") as demo:
         gr_styles = gr.State(value=styles_raw)
         with gr.Column(scale=12, elem_id="box_column"):
             with gr.Group(elem_id="gallery_box"):
-                photo = gr.Image(label="Upload a picture of yourself", sources=["webcam"], interactive=True, type="pil", height=500)
+                photo = gr.Image(label="1. Take a picture of yourself", sources=["webcam"], interactive=True, type="pil", height=500)
                 style_gallery = gr.Gallery(
                     value=[(item["image"], item["title"]) for item in styles_raw],
-                    label="Pick a style from the gallery",
+                    label="2. Pick a style from the gallery",
                     allow_preview=False,
                     columns=4,
                     elem_id="style-gallery",
@@ -100,7 +100,7 @@ with gr.Blocks(css="custom.css") as demo:
                     elem_id="result-gallery",
                     allow_preview=True,
                     show_share_button=False,
-                    height=1000
+                    height=1100
                 )
 
         style_gallery.select(
