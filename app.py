@@ -99,7 +99,7 @@ with gr.Blocks(css="custom.css") as demo:
                     object_fit="contain", 
                     height="auto",
                     elem_id="result-gallery",
-                    allow_preview=False,
+                    allow_preview=True,
                     show_share_button=False,
                     height=1000
                 )
