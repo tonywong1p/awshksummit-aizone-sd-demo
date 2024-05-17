@@ -97,7 +97,6 @@ with gr.Blocks(css="custom.css") as demo:
                     label="Generated Image", 
                     columns=2, 
                     object_fit="contain", 
-                    height="auto",
                     elem_id="result-gallery",
                     allow_preview=True,
                     show_share_button=False,
