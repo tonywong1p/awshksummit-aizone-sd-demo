@@ -111,5 +111,5 @@ with gr.Blocks(css="custom.css") as demo:
             show_progress=False
         )
             
-demo.launch()
+demo.launch(share=True)
 
