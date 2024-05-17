@@ -25,7 +25,7 @@
         "prompt": "masterpiece, concept art, mid shot, dynamic pose, centered, splash art, Sun wukong, (anthropomorphism, monkey king god, holding mythical staff Ruyi Jingu Bang, Chinese myth), 1monkeyking majestic, solo, male focus, fiery effect, detailed eyes, shaded face, Chinese armor chest, armor, blue clothes, pauldrons, unreal engine, 8k, super detail, depth of field, studio lighting, (epic composition, epic proportion), Award Winning"
     },
     {
-        "image": "style/batman.webp",
+        "image": "styles/batman.webp",
         "title": "Batman",
         "prompt": "A full body Batman character, realistic, ultra detailing, nice dynamic pose, 8K sharp focus, highly detailed, photorealism, armored luxury suit with white and gold chrome details and matte black"
     },
@@ -45,8 +45,18 @@
         "prompt": "A portrait of a final fantasy ethereal character figure in the realm of fantasy, muscular and well-built physique, with piercing eyes, exudes an aura of power and strength, shiny metal armor, skilled in swordsmanship, able to wield a sword with precision and speed, has a natural affinity for nature magic, She can communicate with animals, control plants, and summon natural elements to aid her in battle, highly detailed, 8k resolution, smooth, in focus, photo realistic, finely detailed"
     },
     {   
-        "image": "style/fashion.webp",
+        "image": "styles/fashion.webp",
         "title": "Fashion",
         "prompt": "fashion cover, front view, full-body, model, colorful wall, red suit, black shirt, red tie, red leather jeans with silver shoes --ar 9:16"
+    },
+    {
+        "image": "styles/dragon_ball.webp",
+        "title": "Dragon Ball",
+        "prompt": "dragon ball art, in the style of solarization effect, dark red and gray, uhd image, charming anime characters, dark silver and sky-blue, heavy shading, handsome --ar 63:128 --stylize 750 --v 6"
+    },
+    {
+        "image": "styles/cartoon.webp",
+        "title": "Cartoon",
+        "prompt": "Illustrate the heartwarming scene of Lucas, a joyful youngster with a radiant smile, strolling through the enchanting forest hand in hand with loyal companion, Bolt, the exuberant dog. Capture the magical bond between them as they embark on their journey, surrounded by the beauty of nature"
     }
 ]
