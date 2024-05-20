@@ -5,9 +5,9 @@
         "prompt": "(40 year old male:1.1), confident, classy, looking a little bit down into camera, (sitting in the back seat of a Maybach:1.2), aristocratic, (banker:1.2), well dressed, has cufflinks visible, portrait, Moscow city in background, <lora:add_detail:0.4> <lora:epi_noiseoffset2:0.4> <lora:hairdetailer:0.6> <lora:more_details:0.3> <lora:add-detail-xl:1.2> <lora:DetailedEyes_V3:1.2> <lora:offset_0.2:1.2>"
     },
     {
-        "image": "styles/cyberpunk.webp",
-        "title": "Cyberpunk",
-        "prompt": "the body of a man being simulated in white hood, in the style of cyberpunk imagery, mechanical designs, algorithmic artistry, 32k uhd, chrome-plated, enigmatic characters, ue5 --ar 68:128 --stylize 750 --v 5.2"
+        "image": "styles/illustration.webp",
+        "title": "Illustration Art",
+        "prompt": "illustration art, series of colorful illustrations, man, exaggerated features, characters are set against a solid yellow background, humorous, flat with bold outlines, colors limited to three main hues, variations between illustrations will come from changing the character's activity --ar 9:16 --style raw --stylize 300"
     },
     {
         "image": "styles/monkey_king.webp",
