@@ -32,7 +32,7 @@
     {
         "image": "styles/sketch.webp",
         "title": "Sketch",
-        "prompt": "Rough charcoal sketch on old paper, beautiful female figure, seductive pose, clean line art --ar 68:128 --stylize 750 --v 5.2"
+        "prompt": "Rough charcoal sketch on old paper, beautiful female figure, clean line art --ar 68:128 --stylize 750 --v 5.2"
     },
     {
         "image": "styles/gorgeous.webp",
@@ -47,7 +47,7 @@
     {
         "image": "styles/sporty.webp",
         "title": "Sporty",
-        "prompt": "action packed, female dressed as soccer player, soccer ball, smiling, lingerie, football pitch in background, (((full body visible))), looking at viewer, portrait, photography, detailed skin, realistic, photo-realistic, 8k, highly detailed, full length frame, High detail RAW color art, piercing, diffused soft lighting, shallow depth of field, sharp focus, hyperrealism, cinematic lighting, <lora:add_detail:0.4> <lora:epi_noiseoffset2:0.4> <lora:hairdetailer:0.6> <lora:more_details:0.3> <lora:add-detail-xl:1.2> <lora:DetailedEyes_V3:1.2> <lora:offset_0.2:1.2>"
+        "prompt": "action packed, female dressed as soccer player, soccer ball, smiling, football pitch in background, (((full body visible))), looking at viewer, portrait, photography, detailed skin, realistic, photo-realistic, 8k, highly detailed, full length frame, High detail RAW color art, piercing, diffused soft lighting, shallow depth of field, sharp focus, hyperrealism, cinematic lighting, <lora:add_detail:0.4> <lora:epi_noiseoffset2:0.4> <lora:hairdetailer:0.6> <lora:more_details:0.3> <lora:add-detail-xl:1.2> <lora:DetailedEyes_V3:1.2> <lora:offset_0.2:1.2>"
     },
     {
         "image": "styles/1950.webp",
