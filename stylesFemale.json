@@ -1,0 +1,42 @@
+[
+    {
+        "image": "styles/portraits.webp",
+        "title": "Portraits",
+        "prompt": "A half Body Photo of a Scottish, green eyes, messy beehive hair style, natural skin complexion, tartan shirt, outdoor background, soft lighting, captured by {randomly selected} photographer. This image looks glamorous and elegant in style and outdoor  background that was recognized as a contest winner. It has been featured on CG Society. Cinematic"
+    },
+    {
+        "image": "styles/firebird.webp",
+        "title": "Firebird",
+        "prompt": "acid lighting, from below, hyperdetailed, hyper realistic, epic action full body portrait Incredible beautiful of Firebird human with the merger between gold and fire, hypnotic opinion, fractal hair and feathers, detailed face | DamShelma | Bayard Wu, Ognjen Sporin, Yann Dalon, Toni Infante, Amr Elshamy, Viktor Miller-Gausa inquisitive soul | inspiration | gold colors, intricate detailing, surrealism, fractal details, enigmatic flirty smile, view from back, dressed in complex chaotic diamond outfit, artificial nightmares style, reflective eyes, detailed eyes, detailed art deco ornamentation, 32k"
+    },
+    {
+        "image": "styles/cyberpunk_anime.webp",
+        "title": "Cyberpunk Anime",
+        "prompt": "an illustration of a anime with a white hair wearing a black t shirt, in the style of colorful fantasy, cyberpunk manga, hans zatzka, stained-glass, marvel comics, yanjun cheng, colorful muralist --ar 7:9 --s 750 --niji 5"
+    },
+    {
+        "image": "styles/japanese_anime.webp",
+        "title": "Black Red",
+        "prompt": "aesthetic, 2 tone, black and white, simplified shapes, figurative, style mix of acrylic painting, watercolor, oil painting, photography, digital art,   brush strokes, dark red color pop, a gorgeous young asian, highly detailed , ultra detailed, very intricate, low poly, abstract surreal, Kanji , Katakana ,  niji style, graffiti style,  comics style, anime style "
+    },
+    {
+        "image": "styles/monkey_king.webp",
+        "title": "Monkey King",
+        "prompt": "masterpiece, concept art, mid shot, dynamic pose, centered, splash art, Sun wukong, (anthropomorphism, monkey king god, holding mythical staff Ruyi Jingu Bang, Chinese myth), 1monkeyking majestic, solo, male focus, fiery effect, detailed eyes, shaded face, Chinese armor chest, armor, blue clothes, pauldrons, unreal engine, 8k, super detail, depth of field, studio lighting, (epic composition, epic proportion), Award Winning"
+    },
+    {
+        "image": "styles/final_fantasy.webp",
+        "title": "Final Fantasy",
+        "prompt": "A portrait of a final fantasy ethereal character figure in the realm of fantasy, muscular and well-built physique, with piercing eyes, exudes an aura of power and strength, shiny metal armor, skilled in swordsmanship, able to wield a sword with precision and speed, has a natural affinity for nature magic, She can communicate with animals, control plants, and summon natural elements to aid her in battle, highly detailed, 8k resolution, smooth, in focus, photo realistic, finely detailed"
+    },
+    {   
+        "image": "styles/fashion.webp",
+        "title": "Fashion",
+        "prompt": "fashion cover, front view, full-body, model, colorful wall, red suit, black shirt, red tie, red leather jeans with silver shoes --ar 9:16"
+    },
+    {
+        "image": "styles/unity.webp",
+        "title": "Unity",
+        "prompt": "3D Avatar Design, Playful, Cute, Colorful, Animated, Quirky,Unity,Blend shape rigging,Bright and vibrant lighting,Overhead camera angle,Cartoon rendering,By David Rodriguez --ar 9:16"
+    }
+]
