@@ -20,23 +20,38 @@
         "prompt": "aesthetic, 2 tone, black and white, simplified shapes, figurative, style mix of acrylic painting, watercolor, oil painting, photography, digital art,   brush strokes, dark red color pop, a gorgeous young asian, highly detailed , ultra detailed, very intricate, low poly, abstract surreal, Kanji , Katakana ,  niji style, graffiti style,  comics style, anime style "
     },
     {
-        "image": "styles/monkey_king.webp",
-        "title": "Monkey King",
-        "prompt": "masterpiece, concept art, mid shot, dynamic pose, centered, splash art, Sun wukong, (anthropomorphism, monkey king god, holding mythical staff Ruyi Jingu Bang, Chinese myth), 1monkeyking majestic, solo, male focus, fiery effect, detailed eyes, shaded face, Chinese armor chest, armor, blue clothes, pauldrons, unreal engine, 8k, super detail, depth of field, studio lighting, (epic composition, epic proportion), Award Winning"
-    },
-    {
         "image": "styles/final_fantasy.webp",
         "title": "Final Fantasy",
         "prompt": "A portrait of a final fantasy ethereal character figure in the realm of fantasy, muscular and well-built physique, with piercing eyes, exudes an aura of power and strength, shiny metal armor, skilled in swordsmanship, able to wield a sword with precision and speed, has a natural affinity for nature magic, She can communicate with animals, control plants, and summon natural elements to aid her in battle, highly detailed, 8k resolution, smooth, in focus, photo realistic, finely detailed"
-    },
-    {   
-        "image": "styles/fashion.webp",
-        "title": "Fashion",
-        "prompt": "fashion cover, front view, full-body, model, colorful wall, red suit, black shirt, red tie, red leather jeans with silver shoes --ar 9:16"
     },
     {
         "image": "styles/unity.webp",
         "title": "Unity",
         "prompt": "3D Avatar Design, Playful, Cute, Colorful, Animated, Quirky,Unity,Blend shape rigging,Bright and vibrant lighting,Overhead camera angle,Cartoon rendering,By David Rodriguez --ar 9:16"
+    },
+    {
+        "image": "styles/sketch.webp",
+        "title": "Sketch",
+        "prompt": "Rough charcoal sketch on old paper, beautiful female figure, seductive pose, clean line art --ar 68:128 --stylize 750 --v 5.2"
+    },
+    {
+        "image": "styles/gorgeous.webp",
+        "title": "Gorgeous",
+        "prompt": "a gorgeous girl with delicate features,full body,sliver big eyes,pale white skin,Gauze skirt, slender legs, Chinese female, high brightness,shimmer pearly color,high quality,ultra detailed,dynamic poses,dynamic angles,mysterious,fantasy,magic,shinning --ar 9:16 --v 6.0 --s 750"
+    },
+    {
+        "image": "styles/futurism.webp",
+        "title": "Futurism",
+        "prompt": "female face, in the style of afrofuturism, george callaghan, engineering/construction and design, poster art, depictions of urban life, dark cyan and orange, 32k uhd --ar 1:2 --stylize 750 --v 6"
+    },
+    {
+        "image": "styles/sporty.webp",
+        "title": "Sporty",
+        "prompt": "action packed, female dressed as soccer player, soccer ball, smiling, lingerie, football pitch in background, (((full body visible))), looking at viewer, portrait, photography, detailed skin, realistic, photo-realistic, 8k, highly detailed, full length frame, High detail RAW color art, piercing, diffused soft lighting, shallow depth of field, sharp focus, hyperrealism, cinematic lighting, <lora:add_detail:0.4> <lora:epi_noiseoffset2:0.4> <lora:hairdetailer:0.6> <lora:more_details:0.3> <lora:add-detail-xl:1.2> <lora:DetailedEyes_V3:1.2> <lora:offset_0.2:1.2>"
+    },
+    {
+        "image": "styles/1950.webp",
+        "title": "1950",
+        "prompt": "A 1950's diner waitress mixed with alien hybrid, super cute, 1950's esthetic, alien fused with female human hybrid, Blender style, ultra 8k"
     }
 ]

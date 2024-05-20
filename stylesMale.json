@@ -1,8 +1,8 @@
 [
     {
-        "image": "styles/firebird.webp",
-        "title": "Firebird",
-        "prompt": "acid lighting, from below, hyperdetailed, hyper realistic, epic action full body portrait Incredible beautiful of Firebird human with the merger between gold and fire, hypnotic opinion, fractal hair and feathers, detailed face | DamShelma | Bayard Wu, Ognjen Sporin, Yann Dalon, Toni Infante, Amr Elshamy, Viktor Miller-Gausa inquisitive soul | inspiration | gold colors, intricate detailing, surrealism, fractal details, enigmatic flirty smile, view from back, dressed in complex chaotic diamond outfit, artificial nightmares style, reflective eyes, detailed eyes, detailed art deco ornamentation, 32k"
+        "image": "styles/classy.webp",
+        "title": "Classy",
+        "prompt": "(40 year old male:1.1), confident, classy, looking a little bit down into camera, (sitting in the back seat of a Maybach:1.2), aristocratic, (banker:1.2), well dressed, has cufflinks visible, portrait, Moscow city in background, <lora:add_detail:0.4> <lora:epi_noiseoffset2:0.4> <lora:hairdetailer:0.6> <lora:more_details:0.3> <lora:add-detail-xl:1.2> <lora:DetailedEyes_V3:1.2> <lora:offset_0.2:1.2>"
     },
     {
         "image": "styles/cyberpunk_anime.webp",
@@ -20,24 +20,24 @@
         "prompt": "masterpiece, concept art, mid shot, dynamic pose, centered, splash art, Sun wukong, (anthropomorphism, monkey king god, holding mythical staff Ruyi Jingu Bang, Chinese myth), 1monkeyking majestic, solo, male focus, fiery effect, detailed eyes, shaded face, Chinese armor chest, armor, blue clothes, pauldrons, unreal engine, 8k, super detail, depth of field, studio lighting, (epic composition, epic proportion), Award Winning"
     },
     {
-        "image": "styles/batman.webp",
-        "title": "Batman",
-        "prompt": "A full body Batman character, realistic, ultra detailing, nice dynamic pose, 8K sharp focus, highly detailed, photorealism, armored luxury suit with white and gold chrome details and matte black"
-    },
-    {
-        "image": "styles/iron_man.webp",
-        "title": "Iron man",
-        "prompt": "close up of a (very damaged:1.1) brutal iron man in helmet, dynamic action pose, epic composition, ashes, sparks, raining, cinematic, rim light, digital painting, maximum details, hero will not give up at any cost, fight until the last breath, unforgettable, legends never die"
-    },
-    {
         "image": "styles/muscular.webp",
         "title": "Muscular",
         "prompt": "painting style, illustration of a muscular young man with short brown hair, a tough and intense gaze, and strong, calloused hands, white dragon hoodie. He looks like a seasoned fighter with scars and marks of fight on his face and body. sweat, speed and blur effect, in a dynamic epic action pose, dark boxing club background, in the middle of a fierce battle. in the style of Prokoko, with a focus on bold, expressive brushstrokes and vivid colors. The background can be left to the artist's interpretation. The modifier is CarnageStyle, the color is blood_red, and the intensity is 1.6, the lighting is cinematic, the angle is dynamic, the details are extreme"
     },
     {   
-        "image": "styles/fashion.webp",
-        "title": "Fashion",
-        "prompt": "fashion cover, front view, full-body, model, colorful wall, red suit, black shirt, red tie, red leather jeans with silver shoes --ar 9:16"
+        "image": "styles/roman.webp",
+        "title": "Roman",
+        "prompt": "A cover of the romanRoman male character, in the style of high dynamic range, cut/ ripped"
+    },
+    {   
+        "image": "styles/warrior.webp",
+        "title": "Warrior",
+        "prompt": "concept art handsome male asian warrior, (auras wrath) art style, intricate oriental body armor, black and silver hair color,psychopathic look, award winning visuals, ancient war god, (fighting stance), zoomed out, solo subject, solo person . digital artwork, illustrative, painterly, matte painting, highly detailed"
+    },
+    {   
+        "image": "styles/oil_paint.webp",
+        "title": "Oil Painting",
+        "prompt": "an oil painting of a male murderer silhouette on the street, style of van gogh, starry night vibes, expressionism, gloomy, dark tones, unforgettable, emotional depth"
     },
     {
         "image": "styles/unity.webp",
