@@ -74,7 +74,7 @@ with gr.Blocks(css="custom.css") as demo:
     with gr.Row(elem_id=""):
         with gr.Column(scale=1, elem_id="box_column"):
             with gr.Group(elem_id="gallery_box"):
-                photo = gr.Image(label="1. Take a picture of yourself", sources=["webcam"], interactive=True, type="pil", height=800)
+                photo = gr.Image(label="1. Take a picture of yourself", sources=["webcam"], type="pil", height=800)
         with gr.Column(scale=1, elem_id="box_column"):
             with gr.Group(elem_id="gallery_box"):
                 gender_radio = gr.Radio(
@@ -114,6 +114,11 @@ with gr.Blocks(css="custom.css") as demo:
                         show_download_button=True,
                         height=755
                     )
+    with gr.Row(elem_id=""):
+        reset_btn = gr.ClearButton(
+            value="Reset",
+            components=[photo, selected_style_text_box, result_gallery]
+        )
                 
     def select_style(selected_state: gr.SelectData):
         return {
