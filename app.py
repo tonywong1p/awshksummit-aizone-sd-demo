@@ -92,9 +92,12 @@ with open("stylesFemale.json", "r") as file:
 
 def update_styles(gender):
     if gender == "Male":
-        return [(item["image"], item["title"]) for item in male_styles_raw]
+        style_data = [(item["image"], item["title"]) for item in male_styles_raw]
+        gr_styles.update(male_styles_raw)
     else:
-        return [(item["image"], item["title"]) for item in female_styles_raw]
+        style_data = [(item["image"], item["title"]) for item in female_styles_raw]
+        gr_styles.update(female_styles_raw)
+    return style_data
 
 
 with gr.Blocks(css="custom.css") as demo:
