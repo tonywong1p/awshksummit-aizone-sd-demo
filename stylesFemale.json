@@ -16,23 +16,13 @@
     },
     {
         "image": "styles/japanese_anime.webp",
-        "title": "Black Red",
+        "title": "Acrylic Painting",
         "prompt": "aesthetic, 2 tone, black and white, simplified shapes, figurative, style mix of acrylic painting, watercolor, oil painting, photography, digital art,   brush strokes, dark red color pop, a gorgeous young asian, highly detailed , ultra detailed, very intricate, low poly, abstract surreal, Kanji , Katakana ,  niji style, graffiti style,  comics style, anime style "
     },
     {
         "image": "styles/final_fantasy.webp",
         "title": "Final Fantasy",
         "prompt": "A portrait of a final fantasy ethereal character figure in the realm of fantasy, muscular and well-built physique, with piercing eyes, exudes an aura of power and strength, shiny metal armor, skilled in swordsmanship, able to wield a sword with precision and speed, has a natural affinity for nature magic, She can communicate with animals, control plants, and summon natural elements to aid her in battle, highly detailed, 8k resolution, smooth, in focus, photo realistic, finely detailed"
-    },
-    {
-        "image": "styles/unity.webp",
-        "title": "Unity",
-        "prompt": "3D Avatar Design, Playful, Cute, Colorful, Animated, Quirky,Unity,Blend shape rigging,Bright and vibrant lighting,Overhead camera angle,Cartoon rendering,By David Rodriguez --ar 9:16"
-    },
-    {
-        "image": "styles/sketch.webp",
-        "title": "Sketch",
-        "prompt": "Rough sketch on old paper, beautiful female, clean line art --ar 68:128 --stylize 750 --v 5.2"
     },
     {
         "image": "styles/gorgeous.webp",

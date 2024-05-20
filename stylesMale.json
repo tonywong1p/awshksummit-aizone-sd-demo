@@ -5,14 +5,9 @@
         "prompt": "(40 year old male:1.1), confident, classy, looking a little bit down into camera, (sitting in the back seat of a Maybach:1.2), aristocratic, (banker:1.2), well dressed, has cufflinks visible, portrait, Moscow city in background, <lora:add_detail:0.4> <lora:epi_noiseoffset2:0.4> <lora:hairdetailer:0.6> <lora:more_details:0.3> <lora:add-detail-xl:1.2> <lora:DetailedEyes_V3:1.2> <lora:offset_0.2:1.2>"
     },
     {
-        "image": "styles/cyberpunk_anime.webp",
-        "title": "Cyberpunk Anime",
-        "prompt": "an illustration of a anime with a white hair wearing a black t shirt, in the style of colorful fantasy, cyberpunk manga, hans zatzka, stained-glass, marvel comics, yanjun cheng, colorful muralist --ar 7:9 --s 750 --niji 5"
-    },
-    {
-        "image": "styles/japanese_anime.webp",
-        "title": "Black Red",
-        "prompt": "aesthetic, 2 tone, black and white, simplified shapes, figurative, style mix of acrylic painting, watercolor, oil painting, photography, digital art,   brush strokes, dark red color pop, a gorgeous young asian, highly detailed , ultra detailed, very intricate, low poly, abstract surreal, Kanji , Katakana ,  niji style, graffiti style,  comics style, anime style "
+        "image": "styles/cyberpunk.webp",
+        "title": "Cyberpunk",
+        "prompt": "the body of a man being simulated in white hood, in the style of cyberpunk imagery, mechanical designs, algorithmic artistry, 32k uhd, chrome-plated, enigmatic characters, ue5 --ar 68:128 --stylize 750 --v 5.2"
     },
     {
         "image": "styles/monkey_king.webp",
