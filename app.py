@@ -40,7 +40,7 @@ def generate_image(selected_state: gr.SelectData, image: gr.Image,gender_radio, 
     else:
         prompt = female_styles_raw[selected_state.index]['prompt']
     print(f'prompt = {prompt}')
-    negative_prompt = "naked, bikini, skimpy, scanty, bare skin, lingerie, swimsuit, exposed, see-through"
+    negative_prompt = "naked, bikini, skimpy, scanty, bare skin, lingerie, swimsuit, exposed, see-through, nsfw, nudity, porn, adult, explicit, sexual, erotic, nude, naked, lingerie, underwear, panties, bra, nipples, genitals, cleavage, suggestive, provocative, fetish, bondage, xxx, hentai"
     print("[INFO] Prompt: ", prompt)
     print("[INFO] Negative Prompt: ", prompt)
     if image is None:
