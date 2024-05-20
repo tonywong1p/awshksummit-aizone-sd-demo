@@ -32,7 +32,7 @@
     {
         "image": "styles/sketch.webp",
         "title": "Sketch",
-        "prompt": "Rough charcoal sketch on old paper, beautiful female figure, clean line art --ar 68:128 --stylize 750 --v 5.2"
+        "prompt": "Rough sketch on old paper, beautiful female, clean line art --ar 68:128 --stylize 750 --v 5.2"
     },
     {
         "image": "styles/gorgeous.webp",
