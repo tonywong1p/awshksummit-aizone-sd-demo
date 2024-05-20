@@ -33,38 +33,39 @@ pipe = StableDiffusionPipeline.from_pretrained(
 
 ip_model = IPAdapterFaceID(pipe, ip_ckpt, device)
 
-def generate_image(selected_state: gr.SelectData, image: gr.Image, gr_styles: gr.State, progress=gr.Progress(track_tqdm=True)):
+def generate_image(selected_state: gr.SelectData, image: gr.Image,gender_radio, progress=gr.Progress(track_tqdm=True)):
+    selectIndex = selected_state.index
+    if gender_radio == 'Male':
+        prompt = male_styles_raw[selected_state.index]['prompt']
+    else:
+        prompt = female_styles_raw[selected_state.index]['prompt']
+    print(f'prompt = {prompt}')
+    negative_prompt = "naked, bikini, skimpy, scanty, bare skin, lingerie, swimsuit, exposed, see-through"
+    print("[INFO] Prompt: ", prompt)
+    print("[INFO] Negative Prompt: ", prompt)
     if image is None:
         return "Please select an image in step 1 first.", None
-    try:
-        prompt = gr_styles[selected_state.index]["prompt"]
-        print(f'prompt = {prompt}')
-        negative_prompt = "naked, bikini, skimpy, scanty, bare skin, lingerie, swimsuit, exposed, see-through"
-        print("[INFO] Prompt: ", prompt)
-        print("[INFO] Negative Prompt: ", prompt)
 
-        temp_img_path = "./temp/image.jpg"
-        image.save(temp_img_path)
-        
-        pipe.to(device)
-        app = FaceAnalysis(name="buffalo_l", providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
-        app.prepare(ctx_id=0, det_size=(640, 640))
+    temp_img_path = "./temp/image.jpg"
+    image.save(temp_img_path)
+    
+    pipe.to(device)
+    app = FaceAnalysis(name="buffalo_l", providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
+    app.prepare(ctx_id=0, det_size=(640, 640))
 
-        faceid_all_embeds = []
-        face = cv2.imread(temp_img_path)
-        faces = app.get(face)
-        faceid_embed = torch.from_numpy(faces[0].normed_embedding).unsqueeze(0)
-        faceid_all_embeds.append(faceid_embed)
-        average_embedding = torch.mean(torch.stack(faceid_all_embeds, dim=0), dim=0)
-        
-        print("[INFO] Generating image...")
-        image = ip_model.generate(
-            prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=480, height=720, num_inference_steps=30
-        )
-        print("[INFO] Generated")
-        return image
-    finally:
-        gallery_enabled.value = True
+    faceid_all_embeds = []
+    face = cv2.imread(temp_img_path)
+    faces = app.get(face)
+    faceid_embed = torch.from_numpy(faces[0].normed_embedding).unsqueeze(0)
+    faceid_all_embeds.append(faceid_embed)
+    average_embedding = torch.mean(torch.stack(faceid_all_embeds, dim=0), dim=0)
+    
+    print("[INFO] Generating image...")
+    image = ip_model.generate(
+        prompt=prompt, negative_prompt=negative_prompt, faceid_embeds=average_embedding, width=480, height=720, num_inference_steps=30
+    )
+    print("[INFO] Generated")
+    return image
    
 
 
@@ -91,17 +92,15 @@ with open("stylesFemale.json", "r") as file:
     ]
 
 def update_styles(gender):
+    global gr_styles
     if gender == "Male":
         style_data = [(item["image"], item["title"]) for item in male_styles_raw]
-        gr_styles.update(male_styles_raw)
     else:
         style_data = [(item["image"], item["title"]) for item in female_styles_raw]
-        gr_styles.update(female_styles_raw)
     return style_data
 
 
 with gr.Blocks(css="custom.css") as demo:
-    gallery_enabled = gr.State(value=True)
     gr.Image("./static/aws_logo.png", height=100, width=100, show_download_button=False, show_label=False)
     gr.Markdown(
     """
@@ -113,6 +112,12 @@ with gr.Blocks(css="custom.css") as demo:
         with gr.Column(scale=12, elem_id="box_column"):
             with gr.Group(elem_id="gallery_box"):
                 photo = gr.Image(label="1. Take a picture of yourself", sources=["webcam"], interactive=True, type="pil", height=500)
+                gender_radio = gr.Radio(
+                    label="2. Select Gender",
+                    choices=["Male", "Female"],
+                    value="Male",
+                    elem_id="gender-radio"
+                )
                 style_gallery = gr.Gallery(
                     value=[(item["image"], item["title"]) for item in male_styles_raw],
                     label="3. Pick a style from the gallery",
@@ -122,12 +127,6 @@ with gr.Blocks(css="custom.css") as demo:
                     show_share_button=False,
                 )
         with gr.Column(scale=12, elem_id="box_column"):
-            gender_radio = gr.Radio(
-                label="2. Select Gender",
-                choices=["Male", "Female"],
-                value="Male",
-                elem_id="gender-radio"
-            )
             result_gallery = gr.Gallery(
                     label="Generated Image", 
                     columns=2, 
@@ -142,11 +141,11 @@ with gr.Blocks(css="custom.css") as demo:
 
         style_gallery.select(
             fn=generate_image,
-            inputs=[photo, gr_styles],
+            inputs=[photo, gender_radio],
             outputs=[result_gallery],
             queue=False,
             show_progress=True,        
-            )
+        )
         gender_radio.change(
             fn=update_styles,
             inputs=[gender_radio],
@@ -154,4 +153,3 @@ with gr.Blocks(css="custom.css") as demo:
         )
             
 demo.launch(share=False)
-
